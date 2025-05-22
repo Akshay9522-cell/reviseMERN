@@ -2,6 +2,8 @@ import React from 'react'
 import {Link,Outlet, useNavigate} from 'react-router-dom'
 import { FaShoppingCart } from "react-icons/fa";
 import { useSelector } from 'react-redux';
+import { FaUser } from "react-icons/fa";
+
 
 
 const Navbar = () => {
@@ -33,6 +35,11 @@ const Navbar = () => {
           </li>
           <li className='flex justify-center items-center'> 
             <FaShoppingCart onClick={()=>nav('/add')} />{len}
+
+          </li>
+           <li className='flex justify-center items-center'> 
+           <FaUser  onClick={()=>nav('/login')} />
+
 
           </li>
         </ul>

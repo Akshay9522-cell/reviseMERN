@@ -22,6 +22,8 @@ const upload = multer({ storage: storage });
 route.post('/login',userController.login)
 route.post('/insert',upload.array('image',5),userController.insert)
 route.get('/display',userController.display)
+route.post('/orders',userController.order)
+route.get('/allorder',userController.allOrder)
 
 
 
